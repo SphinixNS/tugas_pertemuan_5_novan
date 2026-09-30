@@ -1,30 +1,33 @@
+import { NavLink } from "react-router-dom";
+
+
 function Navbar() {
   return (
     <nav>
-      <a href="#beranda" class="nav-nama">
+      <NavLink to="/" className={"nav-nama"}>
         Novan Arrijal Ghifari Hakim
-      </a>
+      </NavLink>
 
       <ul class="nav-link">
         <li>
-          <a class="nav-button" href="#beranda">
+          <NavLink to="/" className={"nav-button"}>
             Beranda
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a class="nav-button" href="#tentang">
+          <NavLink to="/about" className={"nav-button"}>
             Tentang Saya
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a class="nav-button" href="#gallery">
+          <NavLink to="/gallery" className={"nav-button"}>
             Gallery
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a class="nav-button" href="#kontak">
+          <NavLink to="/contact" className={"nav-button"}>
             Kontak
-          </a>
+          </NavLink>
         </li>
       </ul>
     </nav>
