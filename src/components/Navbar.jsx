@@ -1,31 +1,51 @@
 import { NavLink } from "react-router-dom";
 
-
 function Navbar() {
   return (
     <nav>
-      <NavLink to="/" className={"nav-nama"}>
+      <NavLink to="/" className={"nama-nav"}>
         Novan Arrijal Ghifari Hakim
       </NavLink>
 
-      <ul class="nav-link">
+      <ul className="list-nav">
         <li>
-          <NavLink to="/" className={"nav-button"}>
+          <NavLink
+            end
+            to="/"
+            className={({ isActive }) =>
+              isActive ? "button-nav button-nav-aktif" : "button-nav"
+            }
+          >
             Beranda
           </NavLink>
         </li>
         <li>
-          <NavLink to="/about" className={"nav-button"}>
+          <NavLink
+            to="/about"
+            className={({ isActive }) =>
+              isActive ? "button-nav button-nav-aktif" : "button-nav"
+            }
+          >
             Tentang Saya
           </NavLink>
         </li>
         <li>
-          <NavLink to="/gallery" className={"nav-button"}>
-            Gallery
+          <NavLink
+            to="/gallery"
+            className={({ isActive }) =>
+              isActive ? "button-nav button-nav-aktif" : "button-nav"
+            }
+          >
+            Galeri
           </NavLink>
         </li>
         <li>
-          <NavLink to="/contact" className={"nav-button"}>
+          <NavLink
+            to="/contact"
+            className={({ isActive }) =>
+              isActive ? "button-nav button-nav-aktif" : "button-nav"
+            }
+          >
             Kontak
           </NavLink>
         </li>

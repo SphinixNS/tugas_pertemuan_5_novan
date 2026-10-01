@@ -1,39 +1,38 @@
-import gallery1 from "../assets/gallery1.png";
-import gallery2 from "../assets/gallery2.png";
-import gallery3 from "../assets/gallery3.png";
-import gallery4 from "../assets/gallery4.png";
+import galeri1 from "../assets/gallery1.png";
+import galeri2 from "../assets/gallery2.png";
+import galeri3 from "../assets/gallery3.png";
+import galeri4 from "../assets/gallery4.png";
 
 function Gallery() {
   return (
-    <div>
-      <section id="gallery">
-        <div class="gallery">
-          <h3>Gallery</h3>
-          <hr />
-          <div class="tabel">
-            <table>
-              <tr>
-                <td>
-                  <img class="gambar" src={gallery1} alt="gallery1" />
-                </td>
-                <td>
-                  <img class="gambar" src={gallery2} alt="gallery2" />
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <img class="gambar" src={gallery3} alt="gallery3" />
-                </td>
-                <td>
-                  <img class="gambar" src={gallery4} alt="gallery4" />
-                </td>
-              </tr>
-            </table>
-          </div>
+    <section id="galeri" className="bagian-galeri">
+      <p className="halo">Galeri</p>
+      <h2 className="judul-galeri">
+        Kumpulan <span className="aksen">momen</span> saya
+      </h2>
+      <p className="pengantar-galeri">
+        Beberapa dokumentasi project yang telah saya buat
+      </p>
+
+      <div className="kisi-galeri">
+        <div className="kartu-galeri">
+          <img className="gambar" src={galeri1} alt="Cyber Digi, Belajar dengan sistem Gamifikasi" />
+          <span className="keterangan-gambar">Cyber Digi, Belajar dengan sistem Gamifikasi</span>
         </div>
-      </section>
-      <hr />
-    </div>
+        <div className="kartu-galeri">
+          <img className="gambar" src={galeri2} alt="Sijago, Sistem Jaga Otoritas." />
+          <span className="keterangan-gambar">Sijago, Sistem Jaga Otoritas.</span>
+        </div>
+        <div className="kartu-galeri">
+          <img className="gambar" src={galeri3} alt="Modul Belajar Python Dasar" />
+          <span className="keterangan-gambar">Modul Belajar Python Dasar</span>
+        </div>
+        <div className="kartu-galeri">
+          <img className="gambar" src={galeri4} alt="Ayuna Fashion, Website Katalog Digital" />
+          <span className="keterangan-gambar">Ayuna Fashion, Website Katalog Digital</span>
+        </div>
+      </div>
+    </section>
   );
 }
 

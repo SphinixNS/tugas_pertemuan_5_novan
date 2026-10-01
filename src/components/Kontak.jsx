@@ -1,39 +1,66 @@
 function Kontak() {
   return (
-    <div>
-      <section id="kontak">
-        <div class="kontak">
-          <h3>Kontak</h3>
+    <section id="kontak" className="bagian-kontak">
+      <p className="halo">Kontak</p>
+      <h2 className="judul-kontak">
+        Mari <span className="aksen">terhubung</span>
+      </h2>
+      <p className="pengantar-kontak">
+        Terbuka untuk proyek freelance, kolaborasi, atau sekadar berdiskusi soal
+        web development.
+      </p>
 
-          <table>
-            <tr>
-              <td width="80%">Email</td>
-              <td>
-                <strong>aghif1126@student.upi.edu</strong>
-              </td>
-            </tr>
-            <tr>
-              <td width="80%">Telepon / WhatsApp</td>
-              <td>
-                <strong>+62 8531 4678 713</strong>
-              </td>
-            </tr>
-            <tr>
-              <td width="80%">Github</td>
-              <td>
-                <strong>github.com/SphinixNS</strong>
-              </td>
-            </tr>
-            <tr>
-              <td width="80%">LinkedIn</td>
-              <td>
-                <strong>linkedin.com/in/novan</strong>
-              </td>
-            </tr>
-          </table>
+      <div className="daftar-kontak">
+        <div className="kartu-kontak">
+          <div>
+            <span className="label-kontak">Email</span>
+            <strong className="nilai-kontak">aghif1126@student.upi.edu</strong>
+          </div>
+          <a
+            href="mailto:aghif1126@student.upi.edu"
+            className="button button-garis button-kecil"
+          >
+            Kirim Email
+          </a>
         </div>
-      </section>
-    </div>
+        <div className="kartu-kontak">
+          <div>
+            <span className="label-kontak">Telepon / WhatsApp</span>
+            <strong className="nilai-kontak">+62 8531 4678 713</strong>
+          </div>
+          <a
+            href="https://wa.me/6285314678713"
+            className="button button-garis button-kecil"
+          >
+            Chat WA
+          </a>
+        </div>
+        <div className="kartu-kontak">
+          <div>
+            <span className="label-kontak">Github</span>
+            <strong className="nilai-kontak">github.com/SphinixNS</strong>
+          </div>
+          <a
+            href="https://github.com/SphinixNS"
+            className="button button-garis button-kecil"
+          >
+            Kunjungi
+          </a>
+        </div>
+        <div className="kartu-kontak">
+          <div>
+            <span className="label-kontak">LinkedIn</span>
+            <strong className="nilai-kontak">linkedin.com/in/novan</strong>
+          </div>
+          <a
+            href="https://linkedin.com/in/novan"
+            className="button button-garis button-kecil"
+          >
+            Kunjungi
+          </a>
+        </div>
+      </div>
+    </section>
   );
 }
 
